@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>WhatsApp</title>
+	<link rel="icon" type="imagem/png" href="whats.png" />
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script type="text/javascript" src=whats.js></script>
+	<style>
+		body {
+			background-color: #E0E0E0;
+		}
+
+		.content {
+			margin-top: 30px;
+		}
+
+		nav {
+			background-color: #F9A825;
+		}
+
+		.statistic {
+			font-size: 8em;
+			margin-top: 15px !important;
+		}
+
+		.card {
+			min-height: 250px;
+		}
+
+		.activator {
+			cursor: pointer;
+		}
+
+		@media screen and (max-width: 600px) {
+			.statistic {
+				font-size: 5em;
+			}
+		}
+
+		@media screen and (min-width: 0px) {
+			.global {
+				position: relative;
+				margin: 0 auto;
+				width: 500px;
+				height: 300px;
+			}
+		}
+
+		@media screen and (min-width: 800px) {
+			.global {
+				position: relative;
+				margin: 0 auto;
+				width: 1024px;
+				height: 768px;
+
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="global" >
+		<div class="row">
+			<div class="input-field col s12">
+				<div class="row">
+					<div class="input-field col s4">
+						<input type="text" name="number" id="number">
+						<label class="active" for="number">Digite o numero:</label>
+					</div>
+					<div class="input-field col s4">
+						<input type="text" name="message" id="message">
+						<label class="active" for="message">Digite a mensage:</label>
+					</div>
+					<div>
+					</div>
+				</div>
+				<button class="btn waves-effect waves-light" type="button" onclick="envia()">Enviar
+						<i class="material-icons right">send</i>
+					</button>
+			</div>
+		</div>
+		<!--JavaScript at end of body for optimized loading-->
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
